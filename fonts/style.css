@@ -1,24 +1,9 @@
 @font-face {
-  font-family: "House of Montague Regular";
-  font-style: normal;
-  font-weight: normal;
-  src: local("House of Montague Regular"),
-    url("HouseOfMontagueIkiikocom-4BlmY.woff") format("woff");
-}
-
-@font-face {
   font-family: 'Gradia Light Light';
   font-style: normal;
   font-weight: normal;
   src: local('Gradia Light Light'), url('GradiaLight-K76zW.woff') format('woff');
   }
-
-@font-face {
-  font-family: "Urba";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Urba Regular"), url("Urba.woff") format("woff");
-}
 
 @font-face {
   font-family: "Karasha";
@@ -29,118 +14,6 @@
   font-family: "Space Armour";
   src: url("SpaceArmor-vmlv4.otf");
 }
-@font-face {
-  font-family: "Space Attack";
-  src: url("SpaceAttacks.ttf");
-}
-@font-face {
-  font-family: "Thunderbold Demo Regular";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Thunderbold Demo Regular"),
-    url("ThunderboldDemo.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Vigran Maroll Regular";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Vigran Maroll Regular"),
-    url("VigranMaroll-2OzWK.woff") format("woff");
-}
-@font-face {
-  font-family: "felipa";
-  src: url("Felipa-Regular.otf");
-}
-
-@font-face {
-  font-family: "Dorian Gray Regular";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Dorian Gray Regular"), url("Dorian Gray.woff") format("woff");
-}
-@font-face {
-  font-family: "Exo Regular";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Exo Regular"), url("Exo-Regular.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Exo Italic";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Exo Italic"), url("Exo-Italic.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Exo Thin";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Exo Thin"), url("Exo-Thin.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Exo Thin Italic";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Exo Thin Italic"), url("Exo-ThinItalic.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Exo ExtraLight";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Exo ExtraLight"), url("Exo-ExtraLight.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Exo ExtraLight Italic";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Exo ExtraLight Italic"),
-    url("Exo-ExtraLightItalic.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Exo Light";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Exo Light"), url("Exo-Light.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Exo Light Italic";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Exo Light Italic"), url("Exo-LightItalic.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Exo Medium";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Exo Medium"), url("Exo-Medium.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Exo Medium Italic";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Exo Medium Italic"), url("Exo-MediumItalic.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Milk";
-  src: url("Milk.otf");
-}
-
-@font-face {
-  font-family: "Exo SemiBold";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Exo SemiBold"), url("Exo-SemiBold.woff") format("woff");
-}
 
 @font-face {
   font-family: "Exo SemiBold Italic";
@@ -148,47 +21,4 @@
   font-weight: normal;
   src: local("Exo SemiBold Italic"),
     url("Exo-SemiBoldItalic.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Exo Bold";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Exo Bold"), url("Exo-Bold.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Exo Bold Italic";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Exo Bold Italic"), url("Exo-BoldItalic.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Exo ExtraBold";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Exo ExtraBold"), url("Exo-ExtraBold.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Exo ExtraBold Italic";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Exo ExtraBold Italic"),
-    url("Exo-ExtraBoldItalic.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Exo Black";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Exo Black"), url("Exo-Black.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Exo Black Italic";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Exo Black Italic"), url("Exo-BlackItalic.woff") format("woff");
 }
