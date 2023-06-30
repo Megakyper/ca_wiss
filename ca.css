@@ -1,4 +1,6 @@
 @import url(fonts/style.css);
+@import url(index.js);
+
 body {
   margin: auto;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
@@ -15,6 +17,25 @@ body {
   background-attachment: fixed;
 }
 
+div.into ul.open li.navs a {
+  -webkit-transition: all 100ms;
+  -moz-transition: all 100ms;
+  -o-transition: all 100ms;
+  transition: all 100ms;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.1rem;
+  border-radius: 15px;
+  text-decoration-line: none;
+  color: rgba(18, 46, 67, 1);
+  font-family: "Karasha";
+}
+div.into ul.open li.navs a:hover {
+  font-size: 2.5rem;
+  background-color: chocolate;
+}
+
 @keyframes gradient {
   0% {
     background-position: 0% 0%;
@@ -25,6 +46,17 @@ body {
   100% {
     background-position: 0% 0%;
   }
+}
+
+img#wiss_logo {
+  float: left;
+}
+div.into ul.open {
+  float: left;
+}
+
+div.into ul.open li.navs {
+  text-align: center;
 }
 
 .wave {
@@ -57,6 +89,7 @@ body {
   opacity: 0.4;
   background-color: rgb(203, 203, 203);
 }
+
 @keyframes wave {
   2% {
     transform: translateX(1);
@@ -79,47 +112,22 @@ body {
   }
 }
 
-img#wiss_logo {
-  float: left;
-}
-div.into ul.open {
-  float: left;
-}
 
-div.into ul.open li.navs {
-  text-align: center;
-}
-
-div.into ul.open li.navs a {
-  -webkit-transition: all 100ms;
-  -moz-transition: all 100ms;
-  -o-transition: all 100ms;
-  transition: all 100ms;
-  padding-left: 0.6rem;
-  padding-right: 0.6rem;
-  padding-top: 0.2rem;
-  padding-bottom: 0.1rem;
-  border-radius: 15px;
-  text-decoration-line: none;
-  color: rgba(18, 46, 67, 1);
-  font-family: "Karasha";
-}
-div.into ul.open li.navs a:hover {
-  font-size: 2.5rem;
-  background-color: chocolate;
-}
 
 div.cainfo {
   text-align: center;
 }
+
 div.ca {
   font-family: "Exo SemiBold Italic";
   color: #f2542d;
 }
+
 div.content {
   float: left;
   width: 100vw;
 }
+
 div.wiss {
   color: rgb(25, 12, 26);
   font-family: "Gradia Light Light";
@@ -235,7 +243,8 @@ div.information {
 }
 
 #links {
-  background-color: rgba(50, 50, 54, 0.5);
+  background-color: rgba(25, 25, 60, 1);
+  border-radius: 50px 50px 0px 0px;
 }
 
 ul.links {
@@ -287,6 +296,32 @@ div.headings{
   color: rgb(173, 16, 12);
 }
 
+.hidden{
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.hidden:nth-of-type(2){
+  transform: translateX(-100%);
+}
+
+.hidden:nth-of-type(3){
+  transform: translateY(100%);
+}
+
+.hidden:nth-of-type(4){
+  transform: rotateX('90deg');
+}
+
+.hidden:nth-of-type(5){
+  transform: rotateY('90deg');
+}
+
+.show{
+  transform: translateX(0) translateY(0) rotateX('0deg') rotateY('0deg');
+  opacity: 1;
+}
+
 @media screen and (min-width: 1063px) {
   div.into ul.open li.navs a {
     width: 17rem;
@@ -310,50 +345,14 @@ div.headings{
 }
 
 @media screen and (min-width: 980px) {
-  img.gif {
-    height: 10rem;
-  }
-  img.gifd {
-    height: 13rem;
-    padding-bottom: 2rem;
-    margin-top: 2rem;
-  }
-  div.con {
-    margin-left: 15vw;
-    margin-bottom: 2.5rem;
-    width: 27.5vw;
-  }
-  div.headings {
-    font-size: 4rem;
-  }
-  button.apply {
-    font-size: 3rem;
-    height: max-content;
-    margin-top: 5rem;
-  }
-  p {
-    margin-left: 20vw;
-    width: 60vw;
-    height: 5rem;
-  }
-  div.content {
-    display: flex;
-  }
-  img#ca {
-    height: 15rem;
-    width: 30rem;
-  }
-  div.cainfo {
-    width: 45vw;
-  }
-  button.btn {
-    display: none;
-  }
   img#wiss_logo {
     padding-left: 8vw;
     padding-top: 1rem;
     height: 5.5rem;
     width: auto;
+  }
+  button.btn {
+    display: none;
   }
   div.into ul.open li.navs a {
     margin: 1.8rem;
@@ -372,12 +371,46 @@ div.headings{
   }
   div.content {
     padding-top: 9rem;
+    display: flex;
+  }
+  div.cainfo {
+    width: 45vw;
   }
   div.ca {
     font-size: 3rem;
   }
   div.wiss {
     font-size: 4rem;
+  }
+  img#ca {
+    height: 15rem;
+    width: 30rem;
+  }
+  button.apply {
+    font-size: 3rem;
+    height: max-content;
+    margin-top: 5rem;
+  }
+  p {
+    margin-left: 20vw;
+    width: 60vw;
+    height: 5rem;
+  }
+  div.headings {
+    font-size: 4rem;
+  }
+  img.gif {
+    height: 10rem;
+  }
+  div.con {
+    margin-left: 15vw;
+    margin-bottom: 2.5rem;
+    width: 27.5vw;
+  }
+  img.gifd {
+    height: 13rem;
+    padding-bottom: 2rem;
+    margin-top: 2rem;
   }
   #contacts {
     font-size: 4rem;
@@ -385,34 +418,10 @@ div.headings{
 }
 
 @media screen and (max-width: 980px) {
-  div#Respons {
-    display: flex;
-    flex-direction: column;
-  }
-  div.con {
-    width: 55vw;
-    margin-left: 17.5vw;
-    margin-bottom: 5rem;
-  }
-  div.headings {
-    font-size: 5rem;
-  }
-  img#ca {
-    margin-bottom: 4rem;
-    margin-top: 4rem;
-    margin-left: 20vw;
-    height: 32.4vw;
-    width: 60vw;
-  }
-  div.ca {
-    font-size: 2.5rem;
-  }
-  div.wiss {
-    font-size: 4rem;
-  }
-  button.apply {
-    font-size: 3rem;
-    height: 7rem;
+  img#wiss_logo {
+    padding-left: 10vw;
+    height: 3.75rem;
+    width: auto;
   }
   button.btn {
     position: sticky;
@@ -423,16 +432,6 @@ div.headings{
     height: 7.5vw;
     color: rgb(220, 12, 12);
     float: right;
-  }
-  p {
-    margin-left: 4.5vw;
-    width: 90vw;
-    height: 5rem;
-  }
-  img#wiss_logo {
-    padding-left: 10vw;
-    height: 3.75rem;
-    width: auto;
   }
   div.into ul.open li.navs a {
     align-self: center;
@@ -451,6 +450,9 @@ div.headings{
   div.into {
     padding-top: 4rem;
   }
+  button.btn:checked ~ div.content {
+    padding-top: 13rem;
+  }
   div.content {
     font-size: 2.5rem;
     padding-top: 4rem;
@@ -459,8 +461,39 @@ div.headings{
     -o-transition: all 300ms;
     transition: all 300ms;
   }
-  button.btn:checked ~ div.content {
-    padding-top: 13rem;
+  div.ca {
+    font-size: 2.5rem;
+  }
+  div.wiss {
+    font-size: 4rem;
+  }
+  img#ca {
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+    margin-left: 20vw;
+    height: 32.4vw;
+    width: 60vw;
+  }
+  button.apply {
+    font-size: 3rem;
+    height: 7rem;
+  }
+  div.headings {
+    font-size: 5rem;
+  }
+  p {
+    margin-left: 4.5vw;
+    width: 90vw;
+    height: 5rem;
+  }
+  div#Respons {
+    display: flex;
+    flex-direction: column;
+  }
+  div.con {
+    width: 55vw;
+    margin-left: 17.5vw;
+    margin-bottom: 5rem;
   }
   img.gif {
     height: 10rem;
