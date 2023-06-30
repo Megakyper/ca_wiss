@@ -9,7 +9,7 @@ body {
     #633e3e 22%,
     #694646 43%,
     #704f4f 82%,
-    #efe33a 100%
+    #faf175 100%
   );
   animation: gradient 7.5s ease infinite;
   background-size: 400% 400%;
@@ -31,20 +31,21 @@ body {
 .wave {
   position: fixed;
   border-radius: 1000% 1000% 100% 100%;
-  width: 100%;
-  height: 12em;
+  width: 200%;
+  height: 17em;
   animation: wave 14s -2s linear infinite;
   transform: translate3d(0, 0, 0);
   opacity: 0.8;
   bottom: 0%;
   z-index: -1;
-  background-color: #f7f7f795;
+  background-color: #f7f7f7dd;
 }
 
 .wave:nth-of-type(2) {
   animation: wave 20s linear reverse infinite;
   animation-delay: -2s;
-  bottom: -7.5%;
+  height: 22rem;
+  bottom: -2.5%;
   opacity: 0.8;
   background-color: #f9fbfcb0;
 }
@@ -52,7 +53,8 @@ body {
 .wave:nth-of-type(3) {
   animation: wave 18s reverse infinite;
   animation-delay: -6s;
-  bottom: -5%;
+  bottom: 2%;
+  height: 22rem;
   opacity: 0.5;
   background-color: #f6f8f8a6;
 }
@@ -112,7 +114,7 @@ div.cainfo {
   text-align: center;
 }
 div.ca {
-  font-family: "Exo Bold Italic";
+  font-family: "Exo SemiBold Italic";
   color: #f2542d;
 }
 div.content {
@@ -121,62 +123,89 @@ div.content {
 }
 div.wiss {
   color: #181823;
-  font-family: "Milk";
+  font-family:  'Gradia Light Light';
 }
 
-a.signup {
-  text-decoration: none;
-}
-button.apply {
+button#apply {
   color: #0a2647;
   width: 100vw;
-  background-color: #ce5d12;
-  border-radius: 100px;
   border: none;
+  background-color: transparent;
   margin-top: 1rem;
   font-family: "Space Armour";
-  text-decoration: none;
 }
 
 button#apply :hover {
-  width: 85vw;
-  font-size: 2.75rem;
   -webkit-transition: all 300ms;
   -moz-transition: all 300ms;
   -o-transition: all 300ms;
   transition: all 300ms;
+  font-size: 2.75rem;
 }
 
-a.login {
+p{
+  background-color: #ce5d12;
   text-align: center;
+  border-radius: 100px;
 }
+
+a.signup{
+  text-decoration: none;
+  color: #0a2647fc;
+}
+
 
 #aboutus {
-  background-color: #51333387;
+  background-color: rgb(81, 51, 51, 0.5);
   margin-top: 10rem;
 }
 
 #Respons {
-  background-color: #1d5c6387;
+  background-color: rgb(29, 92, 99, 0.5);
 }
 
 div.con {
-  background: radial-gradient(#0a2647 20%, #0f3868 40%, #082546 100%);
-  border-radius: 50px;
+  background: radial-gradient(#0a2647c3 20%, #0f3868c3 40%, #082546c3 100%);
+  border-radius: 25px 100px;
   float: left;
   font-size: 1.4rem;
   color: #c7afff;
   height: 22.5rem;
 }
 
+div#rev{
+  height: 23.5rem;
+  background: linear-gradient(
+    30deg,
+    rgb(104, 15, 15,0.85) 20%,
+    rgb(87, 11.5, 11.5,0.85) 40%,
+    rgb(70, 8, 8,0.85) 100%
+  );
+  border-radius: 100px 12.5px;
+}
+
+#contact {
+  background-color: rgba(40, 82, 72, 0.5);
+}
+
+div.contact {
+  font-size: 5rem;
+  color: rgb(44, 39, 98);
+}
+
+div.details {
+  font-size: 3rem;
+  color: #000;
+}
+
 div.carrier {
-  font-family: "Exo Bold Italic";
+  font-family:"Exo SemiBold Italic";
   align-self: center;
   float: left;
   width: 100vw;
   padding-bottom: 6rem;
   text-align: center;
-  align-items: center;
+  align-content: center;
 }
 
 img#promote {
@@ -190,10 +219,61 @@ img#serve {
 
 div.information {
   color: #c7afff;
-  font-size: large;
+  font-size: 20px;
   padding-left: 10vw;
   width: 80vw;
 }
+
+#links{
+  background-color: rgba(50, 50, 54, 0.5);
+}
+
+ul.links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 100px;
+}
+ul.links li {
+  margin-right: 4rem;
+}
+
+div.carrier h1 {
+  color: rgb(168, 128, 7);
+}
+
+div.carrier h1#wiss_web{
+  color: rgb(254, 191, 3);
+
+}
+
+#wissenaire_web{
+  color: #ff0404;
+  text-decoration: none;
+}
+
+span.fa-facebook {
+  color: rgb(40, 85, 182);
+  font-size: 90px;
+}
+
+span.fa-linkedin-in {
+  color: rgb(30, 48, 80);
+  font-size: 90px;
+}
+
+span.fa-twitter{
+  color: rgb(0, 172, 238);
+  font-size: 90px;
+}
+
+span.fa-instagram {
+  color: rgb(195, 11, 85);
+  font-size: 100px;
+}
+
 
 @media screen and (min-width: 1063px) {
   div.into ul.open li.navs a {
@@ -211,8 +291,8 @@ div.information {
     font-size: 3.5rem;
   }
 }
-@media screen and (min-width:1250px){
-  div.into ul.open li.navs a{
+@media screen and (min-width: 1250px) {
+  div.into ul.open li.navs a {
     font-size: 2.25rem;
   }
 }
@@ -221,26 +301,34 @@ div.information {
   img.gif {
     height: 10rem;
   }
+  img.gifd {
+    height: 13rem;
+    padding-bottom: 2rem;
+    margin-top: 2rem;
+  }
   div.con {
-    margin-left: 8.5rem;
+    margin-left: 15vw;
     margin-bottom: 2.5rem;
-    width: 32.5vw;
+    width: 27.5vw;
   }
   div.headings {
-    font-size: 6rem;
+    font-size: 4rem;
   }
   button.apply {
     font-size: 3rem;
     height: max-content;
-    width: 30rem;
-    margin-left: 30vw;
-    margin-top: 7rem;
+    margin-top: 5rem;
+  }
+  p{
+    margin-left: 20vw;
+    width: 60vw;
+    height: 5rem;
   }
   div.content {
     display: flex;
   }
   img#ca {
-    height: 13.5rem;
+    height: 15rem;
     width: 30rem;
   }
   div.cainfo {
@@ -279,6 +367,9 @@ div.information {
   div.wiss {
     font-size: 4rem;
   }
+  #contacts{
+    font-size: 4rem;
+  }
 }
 
 @media screen and (max-width: 980px) {
@@ -287,13 +378,11 @@ div.information {
     flex-direction: column;
   }
   div.con {
-    width: 50vw;
+    width: 55vw;
+    margin-left: 17.5vw;
     margin-bottom: 5rem;
   }
   div.headings {
-    font-size: 5rem;
-  }
-  div.wiss {
     font-size: 5rem;
   }
   img#ca {
@@ -322,6 +411,11 @@ div.information {
     height: 7.5vw;
     color: rgb(220, 12, 12);
     float: right;
+  }
+  p{
+    margin-left: 4.5vw;
+    width: 90vw;
+    height: 5rem;
   }
   img#wiss_logo {
     padding-left: 10vw;
@@ -355,5 +449,16 @@ div.information {
   }
   button.btn:checked ~ div.content {
     padding-top: 13rem;
+  }
+  img.gif {
+    height: 10rem;
+  }
+  img.gifd {
+    height: 14rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  #contacts{
+    font-size: 3rem;
   }
 }

@@ -7,6 +7,13 @@
 }
 
 @font-face {
+  font-family: 'Gradia Light Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gradia Light Light'), url('GradiaLight-K76zW.woff') format('woff');
+  }
+
+@font-face {
   font-family: "Urba";
   font-style: normal;
   font-weight: normal;
