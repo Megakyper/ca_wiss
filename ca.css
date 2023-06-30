@@ -5,11 +5,11 @@ body {
   overflow: auto;
   background: linear-gradient(
     315deg,
-    #321f1f 3%,
-    #633e3e 22%,
-    #694646 43%,
-    #704f4f 82%,
-    #faf175 100%
+    rgb(87, 49, 23) 22%,
+    rgb(97, 63, 35) 43%,
+    rgb(117, 90, 59) 62%,
+    rgb(158, 145, 108) 81%,
+    rgb(240, 255, 206) 100%
   );
   animation: gradient 7.5s ease infinite;
   background-size: 400% 400%;
@@ -35,28 +35,28 @@ body {
   height: 17em;
   animation: wave 14s -2s linear infinite;
   transform: translate3d(0, 0, 0);
-  opacity: 0.8;
+  opacity: 0.3;
   bottom: 0%;
   z-index: -1;
-  background-color: #f7f7f7dd;
+  background-color:black;
 }
 
 .wave:nth-of-type(2) {
   animation: wave 20s linear reverse infinite;
-  animation-delay: -2s;
-  height: 22rem;
+  animation-delay: -12s;
+  height: 17rem;
   bottom: -2.5%;
-  opacity: 0.8;
-  background-color: #f9fbfcb0;
+  opacity: 0.5;
+  background-color: black;
 }
 
 .wave:nth-of-type(3) {
   animation: wave 18s reverse infinite;
-  animation-delay: -6s;
+  animation-delay: -8s;
   bottom: 2%;
-  height: 22rem;
-  opacity: 0.5;
-  background-color: #f6f8f8a6;
+  height: 17rem;
+  opacity: 0.4;
+  background-color: black;
 }
 @keyframes wave {
   2% {
@@ -102,14 +102,14 @@ div.into ul.open li.navs a {
   padding-bottom: 0.1rem;
   border-radius: 15px;
   text-decoration-line: none;
-  color: #0a2647;
+  color: rgba(18, 46, 67,1);
   font-family: "Karasha";
 }
 div.into ul.open li.navs a:hover {
-  color: #082546;
   font-size: 2.5rem;
-  background-color: #ae3c1fc4;
+  background-color: chocolate;
 }
+
 div.cainfo {
   text-align: center;
 }
@@ -122,12 +122,12 @@ div.content {
   width: 100vw;
 }
 div.wiss {
-  color: #181823;
+  color: rgb(25, 12, 26);
   font-family:  'Gradia Light Light';
 }
 
 button#apply {
-  color: #0a2647;
+  color: rgba(10, 38, 71,1);
   width: 100vw;
   border: none;
   background-color: transparent;
@@ -151,35 +151,43 @@ p{
 
 a.signup{
   text-decoration: none;
-  color: #0a2647fc;
+  color:  rgba(10, 38, 71,1);
 }
 
 
 #aboutus {
-  background-color: rgb(81, 51, 51, 0.5);
+  background-color: rgba(81, 51, 51,0.3);
   margin-top: 10rem;
 }
 
 #Respons {
-  background-color: rgb(29, 92, 99, 0.5);
+  background-color: rgba(29, 92, 99,0.5);
 }
 
 div.con {
-  background: radial-gradient(#0a2647c3 20%, #0f3868c3 40%, #082546c3 100%);
+  background: radial-gradient(rgba(10, 38, 71,0.7) 20%, rgba(15, 56, 104,0.7) 40%, rgba(8, 37, 70,0.7) 100%);
+  -webkit-transition: all 200ms;
+  -moz-transition: all 200ms;
+  -o-transition: all 200ms;
+  transition: all 200ms;
   border-radius: 25px 100px;
-  float: left;
   font-size: 1.4rem;
   color: #c7afff;
   height: 22.5rem;
+  float: left;
+}
+
+div.con:hover{
+  scale: 1.05;
 }
 
 div#rev{
   height: 23.5rem;
   background: linear-gradient(
     30deg,
-    rgb(104, 15, 15,0.85) 20%,
-    rgb(87, 11.5, 11.5,0.85) 40%,
-    rgb(70, 8, 8,0.85) 100%
+    rgba(104, 15, 15,0.85) 20%,
+    rgba(87, 11.5, 11.5,0.85) 40%,
+    rgba(70, 8, 8,0.85) 100%
   );
   border-radius: 100px 12.5px;
 }
