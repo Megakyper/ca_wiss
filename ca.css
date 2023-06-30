@@ -9,7 +9,7 @@ body {
     #633e3e 22%,
     #694646 43%,
     #704f4f 82%,
-    #fffbbd 100%
+    #efe33a 100%
   );
   animation: gradient 7.5s ease infinite;
   background-size: 400% 400%;
@@ -104,6 +104,7 @@ div.into ul.open li.navs a {
   font-family: "Karasha";
 }
 div.into ul.open li.navs a:hover {
+  color: #082546;
   font-size: 2.5rem;
   background-color: #ae3c1fc4;
 }
@@ -125,9 +126,9 @@ div.wiss {
 
 a.signup {
   text-decoration: none;
-  color: #0a2647;
 }
 button.apply {
+  color: #0a2647;
   width: 100vw;
   background-color: #ce5d12;
   border-radius: 100px;
