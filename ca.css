@@ -3,16 +3,15 @@ body {
   margin: auto;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   overflow: auto;
-  background: linear-gradient(
-    315deg,
-    rgb(87, 49, 23) 22%,
-    rgb(97, 63, 35) 43%,
-    rgb(117, 90, 59) 62%,
-    rgb(158, 145, 108) 81%,
-    rgb(240, 255, 206) 100%
+  background: radial-gradient(
+    rgb(25,220,200) 8%,
+    rgb(67, 206, 192)  23%,
+    rgb(88, 105, 170) 61%,
+    rgb(94, 83, 166) 86%,
+    rgb(0, 8, 0) 100%
   );
-  animation: gradient 7.5s ease infinite;
-  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  background-size: 200% 400%;
   background-attachment: fixed;
 }
 
@@ -38,7 +37,7 @@ body {
   opacity: 0.3;
   bottom: 0%;
   z-index: -1;
-  background-color:black;
+  background-color: rgb(228, 227, 227);
 }
 
 .wave:nth-of-type(2) {
@@ -47,7 +46,7 @@ body {
   height: 17rem;
   bottom: -2.5%;
   opacity: 0.5;
-  background-color: black;
+  background-color: rgb(209, 209, 209);
 }
 
 .wave:nth-of-type(3) {
@@ -56,7 +55,7 @@ body {
   bottom: 2%;
   height: 17rem;
   opacity: 0.4;
-  background-color: black;
+  background-color: rgb(203, 203, 203);
 }
 @keyframes wave {
   2% {
@@ -102,7 +101,7 @@ div.into ul.open li.navs a {
   padding-bottom: 0.1rem;
   border-radius: 15px;
   text-decoration-line: none;
-  color: rgba(18, 46, 67,1);
+  color: rgba(18, 46, 67, 1);
   font-family: "Karasha";
 }
 div.into ul.open li.navs a:hover {
@@ -123,11 +122,11 @@ div.content {
 }
 div.wiss {
   color: rgb(25, 12, 26);
-  font-family:  'Gradia Light Light';
+  font-family: "Gradia Light Light";
 }
 
 button#apply {
-  color: rgba(10, 38, 71,1);
+  color: rgba(10, 38, 71, 1);
   width: 100vw;
   border: none;
   background-color: transparent;
@@ -143,29 +142,32 @@ button#apply :hover {
   font-size: 2.75rem;
 }
 
-p{
+p {
   background-color: #ce5d12;
   text-align: center;
   border-radius: 100px;
 }
 
-a.signup{
+a.signup {
   text-decoration: none;
-  color:  rgba(10, 38, 71,1);
+  color: rgba(10, 38, 71, 1);
 }
 
-
 #aboutus {
-  background-color: rgba(81, 51, 51,0.3);
+  background-color: rgba(81, 51, 51, 0.3);
   margin-top: 10rem;
 }
 
 #Respons {
-  background-color: rgba(29, 92, 99,0.5);
+  background-color: rgba(29, 92, 99, 0.5);
 }
 
 div.con {
-  background: radial-gradient(rgba(10, 38, 71,0.7) 20%, rgba(15, 56, 104,0.7) 40%, rgba(8, 37, 70,0.7) 100%);
+  background: radial-gradient(
+    rgba(10, 38, 71, 0.7) 20%,
+    rgba(15, 56, 104, 0.7) 40%,
+    rgba(8, 37, 70, 0.7) 100%
+  );
   -webkit-transition: all 200ms;
   -moz-transition: all 200ms;
   -o-transition: all 200ms;
@@ -177,17 +179,17 @@ div.con {
   float: left;
 }
 
-div.con:hover{
+div.con:hover {
   scale: 1.05;
 }
 
-div#rev{
+div#rev {
   height: 23.5rem;
   background: linear-gradient(
     30deg,
-    rgba(104, 15, 15,0.85) 20%,
-    rgba(87, 11.5, 11.5,0.85) 40%,
-    rgba(70, 8, 8,0.85) 100%
+    rgba(104, 15, 15, 0.85) 20%,
+    rgba(87, 11.5, 11.5, 0.85) 40%,
+    rgba(70, 8, 8, 0.85) 100%
   );
   border-radius: 100px 12.5px;
 }
@@ -198,7 +200,7 @@ div#rev{
 
 div.contact {
   font-size: 5rem;
-  color: rgb(44, 39, 98);
+  color: rgb(173, 16, 12);
 }
 
 div.details {
@@ -207,7 +209,7 @@ div.details {
 }
 
 div.carrier {
-  font-family:"Exo SemiBold Italic";
+  font-family: "Exo SemiBold Italic";
   align-self: center;
   float: left;
   width: 100vw;
@@ -232,7 +234,7 @@ div.information {
   width: 80vw;
 }
 
-#links{
+#links {
   background-color: rgba(50, 50, 54, 0.5);
 }
 
@@ -252,12 +254,11 @@ div.carrier h1 {
   color: rgb(168, 128, 7);
 }
 
-div.carrier h1#wiss_web{
+div.carrier h1#wiss_web {
   color: rgb(254, 191, 3);
-
 }
 
-#wissenaire_web{
+#wissenaire_web {
   color: #ff0404;
   text-decoration: none;
 }
@@ -272,7 +273,7 @@ span.fa-linkedin-in {
   font-size: 90px;
 }
 
-span.fa-twitter{
+span.fa-twitter {
   color: rgb(0, 172, 238);
   font-size: 90px;
 }
@@ -282,6 +283,9 @@ span.fa-instagram {
   font-size: 100px;
 }
 
+div.headings{
+  color: rgb(173, 16, 12);
+}
 
 @media screen and (min-width: 1063px) {
   div.into ul.open li.navs a {
@@ -327,7 +331,7 @@ span.fa-instagram {
     height: max-content;
     margin-top: 5rem;
   }
-  p{
+  p {
     margin-left: 20vw;
     width: 60vw;
     height: 5rem;
@@ -375,7 +379,7 @@ span.fa-instagram {
   div.wiss {
     font-size: 4rem;
   }
-  #contacts{
+  #contacts {
     font-size: 4rem;
   }
 }
@@ -420,7 +424,7 @@ span.fa-instagram {
     color: rgb(220, 12, 12);
     float: right;
   }
-  p{
+  p {
     margin-left: 4.5vw;
     width: 90vw;
     height: 5rem;
@@ -466,7 +470,7 @@ span.fa-instagram {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
-  #contacts{
+  #contacts {
     font-size: 3rem;
   }
 }
