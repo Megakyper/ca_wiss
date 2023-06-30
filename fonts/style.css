@@ -7,6 +7,26 @@
 }
 
 @font-face {
+  font-family: "Urba";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Urba Regular"), url("Urba.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Karasha";
+  src: url("Karasha-z8mYw.otf");
+}
+
+@font-face {
+  font-family: "Space Armour";
+  src: url("SpaceArmor-vmlv4.otf");
+}
+@font-face {
+  font-family: "Space Attack";
+  src: url("SpaceAttacks.ttf");
+}
+@font-face {
   font-family: "Thunderbold Demo Regular";
   font-style: normal;
   font-weight: normal;
@@ -23,7 +43,7 @@
 }
 @font-face {
   font-family: "felipa";
-  src: url(Felipa-Regular.otf);
+  src: url("Felipa-Regular.otf");
 }
 
 @font-face {
@@ -101,6 +121,11 @@
   font-style: normal;
   font-weight: normal;
   src: local("Exo Medium Italic"), url("Exo-MediumItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Milk";
+  src: url("Milk.otf");
 }
 
 @font-face {
