@@ -31,7 +31,7 @@ div.into ul.open li.navs a {
   font-family: "Karasha";
 }
 div.into ul.open li.navs a:hover {
-  font-size: 160%;
+  font-size: 138%;
   background-color: chocolate;
 }
 
@@ -253,7 +253,7 @@ div.carrier {
 }
 
 div.wiss {
-  font-size: 6rem;
+  font-size: 5rem;
 }
 
 img#promote {

@@ -37,7 +37,7 @@
 
   div.into ul.open li.navs a {
     align-self: center;
-    font-size: 150%;
+    font-size: 160%;
     width: 50%;
     margin-left: 25%;
   }
@@ -85,7 +85,7 @@
     float: left;
     display: flex;
     flex-direction: row;
-    font-size: 175%;
+    font-size: 135%;
   }
   div.con {
     width: 30%;
