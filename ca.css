@@ -5,8 +5,8 @@ body {
   margin: auto;
   overflow: auto;
   background: radial-gradient(
-    rgb(25,120,200) 8%,
-    rgb(67, 116, 192)  23%,
+    rgb(25, 120, 200) 8%,
+    rgb(67, 116, 192) 23%,
     rgb(88, 105, 170) 61%,
     rgb(94, 83, 166) 80%,
     rgb(0, 8, 0) 100%
@@ -135,7 +135,7 @@ button#apply {
   width: 100vw;
   border: none;
   background-color: transparent;
-  margin-top: 5rem;
+  margin: 5rem 0rem 5rem 0rem;
   font-family: "Space Armour";
 }
 
@@ -160,14 +160,14 @@ a.signup {
 
 #aboutus {
   background-color: rgba(81, 51, 51, 0.4);
-  margin-top: 10rem;
+  padding-top: 5rem;
 }
 
 #Respons {
   background-color: rgba(15, 56, 104, 0.4);
 }
 
-#rew{
+#rew {
   background-color: rgba(87, 11.5, 11.5, 0.3);
 }
 
@@ -183,7 +183,7 @@ div.con {
   transition: all 200ms;
   border-radius: 25px 100px;
   font-size: 1.4rem;
-  color:rgb(249, 246, 246);
+  color: rgb(249, 246, 246);
   height: 22.5rem;
   float: left;
 }
@@ -227,6 +227,10 @@ div.carrier {
   align-content: center;
 }
 
+div#form {
+  padding-bottom: 0rem;
+}
+
 img#promote {
   margin-bottom: 1rem;
 }
@@ -256,6 +260,7 @@ ul.links {
   text-align: center;
   padding-top: 100px;
 }
+
 ul.links li {
   margin-right: 4rem;
 }
@@ -293,6 +298,56 @@ span.fa-instagram {
   font-size: 100px;
 }
 
-div.headings{
+div.headings {
+  margin-bottom: 2rem;
   color: rgb(4, 3, 128);
+}
+
+div#form {
+  background-color: rgba(0, 172, 238, 0.8);
+  justify-items: center;
+  display: grid;
+  width: 100vw;
+}
+
+#signupbox {
+  text-align: center;
+  align-items: center;
+  float: left;
+  font-size: 2rem;
+  font-family: "Exo SemiBold Italic";
+}
+
+input {
+  height: 9vh;
+  background-color: transparent;
+  border-width: 0px 0px 3px 0px;
+  border-color: rgb(168, 128, 7);
+}
+
+button.sign {
+  border-radius: 5px;
+  border-width: 0px;
+  background-color: rgba(0, 128, 128, 0.659);
+  border-radius: 10px;
+  font-size: 3rem;
+  width: 25vw;
+  margin: 5rem 0rem 5rem 0vw;
+}
+
+button.sign:hover{
+  background-color: teal;
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -o-transition: all 500ms;
+  transition: all 500ms;
+}
+
+span.span{
+  color: rgb(224, 17, 95);
+}
+
+a.mail {
+  color: #ff0404;
+  text-decoration: none;
 }
