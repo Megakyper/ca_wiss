@@ -328,7 +328,7 @@ input {
 button.sign {
   border-radius: 5px;
   border-width: 0px;
-  background-color: rgba(0, 128, 128, 0.659);
+  background-color: rgba(4, 199, 199, 0.659);
   border-radius: 10px;
   font-size: 3rem;
   width: 25vw;
@@ -336,7 +336,7 @@ button.sign {
 }
 
 button.sign:hover{
-  background-color: teal;
+  background-color: rgb(4, 203, 203);
   -webkit-transition: all 500ms;
   -moz-transition: all 500ms;
   -o-transition: all 500ms;
