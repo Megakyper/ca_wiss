@@ -350,11 +350,11 @@ form {
 }
 
 input {
-  height: 9vh;
+  height: 6vh;
   background-color: transparent;
   border-width: 0px 0px 3px 0px;
   border-color: rgb(168, 128, 7);
-  font-size: 4rem;
+  font-size: 75%;
 }
 
 button.sign {
