@@ -96,6 +96,7 @@
   }
   .inputbox {
     width: 40vw;
+    height: 5rem;
     margin-left: 5vw;
   }
   span.span{
@@ -202,6 +203,7 @@
   }
   .inputbox{
     width: 80vw;
+    height: 5rem;
     margin-right: 10vw;
   }
   #signupbox{
